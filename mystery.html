@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+</head>
+
+<body>
+  Name: <input type="text" id="fname">
+<button id="submit">Get Results</button>
+
+
+<div id="result"></div>
+  
+function validateForm() {
+  var x = document.getElementById("fname");
+  var op = document.getElementById("result");
+  if (x.value == "hello") {
+    op.innerHTML = "Win";
+
+  } else {
+    op.innerHTML = "Fail";
+
+  }
+}
+var submitButton = document.getElementById('submit');
+
+submitButton.onclick = function () {
+  validateForm();
+};
+
+    </script>
+
+  
+
+</body>
+
+</html>
